@@ -1,0 +1,16 @@
+[package]
+name = "min-wasm"
+description = "My super awesome Rust, WebAssembly, and Webpack project!"
+version = "0.1.0"
+authors = ["mikbry <mik@miklabs.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+# opt-level = "z"
+lto = true
+# panic = "abort"
+
+[dependencies]
